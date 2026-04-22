@@ -72,3 +72,15 @@ async function findFriend() {
     }
 }
 findBtn.addEventListener("click", findFriend);
+
+
+
+
+/*
+What to do for later:
+-New webpage w/bootstrap
+-only display friend name
+-when click on friend name, display phone number and other details without reloading the page
+
+
+*/
