@@ -4,7 +4,7 @@ const friendIdInput = document.getElementById("friendId");
 const tableBody = document.querySelector("#friendsTable tbody");
 const messageDiv = document.getElementById("message");
 
-const API_URL = "";
+
 
 function clearTable() {
     tableBody.innerHTML = "";
@@ -29,7 +29,7 @@ async function loadAllFriends() {
     clearTable();
     showMessage("Loading all friends...");
     try {
-        const response = await fetch("API_URL");
+        const response = await fetch(API_URL);
         if (!response.ok) {
             throw new Error(`HTTP error ${response.status} `);
         }
